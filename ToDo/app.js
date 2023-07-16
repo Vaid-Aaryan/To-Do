@@ -10,7 +10,7 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-joe:admin123@db1.kibsb.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://vaid:38LAaXwXMVs8PPRm@cluster0.o5tez8w.mongodb.net/");
 
 const itemsSchema={
   name: String
@@ -39,7 +39,7 @@ const listSchema={
 
 const List=mongoose.model("List",listSchema);
 
-app.listen(process.env.PORT,function(){
+app.listen(3000,function(){
   console.log("Server is running.");
 })
 
